@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pessoal (CV Oline)</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <!-- MENU TOPO-->
+    <nav>
+        <a href="#sobre-mim">Sobre Mim</a>
+        <a href="#formacao">Formação</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <!-- Seções da Página -->
+
+    <!-- Seção Sobre Mim -->
+    <section id="sobre-mim">
+        <h2>Sobre Mim</h2>
+        <img src="img/IMG_20220614_194228_937-removebg-preview.png" alt="Foto Jonathna" width="300">
+        <p>Meu nome é Jonathan, tenho 22 anos e trabalho como analista de qualidade. Nas horas vagas, gosto de estudar programação em Java e assistir a séries medievais e de negócios. Também sou fã de esportes, rock e jogos de guerra. Sinto que o tempo é sempre curto para fazer tudo o que eu gosto, mas tento aproveitar ao máximo.</p>
+        <p>De vez em quando, gosto de me arriscar na cozinha e preparar algumas comidas diferentes. É uma forma de sair da rotina e explorar novos sabores.</p>
+    </section>
+
+    <!-- Seção Formação -->
+    <section id="formacao">
+        <h2>Formação</h2>
+        <p>Estou terminando o primeiro ano de Análise e Desenvolvimento de Sistemas pela UNINTER. Durante a faculdade, desenvolvi um projeto utilizando JavaScript, HTML e CSS, e também costumo realizar outros projetos por conta própria. Fiz um curso profissionalizante em programação em Python em 2017 e, atualmente, estou cursando um programa de Full Stack em Java. Meu nível de inglês é básico, mas estou sempre buscando melhorar.</p>
+        <p>Idiomas: Português (nativo), Inglês (Basico) e Espanhol (Basico).</p>
+    </section>
+
+    <!-- Seção Portfólio -->
+    <section id="portfolio">
+        <h2>Portfólio</h2>
+        <p>Abaixo estão alguns dos meus projetos mais recentes:</p>
+        <ul>
+            <li><a href="https://jonathanh766.github.io/TrabalhoFaculdade/" target="_blank">Projeto 1: ONG de Doação de Animais</a> - Um site de uma ONG de animais para doação e ajuda financeira.</li>
+            <li><a href="https://jonathanh766.github.io/projetometragem/" target="_blank">Projeto 2: Calcula a Metragem para uma viagem</a> - Um sistema que calcula o valor a pagar para um motorista que carrega eucalipto.</li>
+            <li><a href="https://jonathanh766.github.io/Contabilidade/" target="_blank">Projeto 3: Site de Contabilidade</a> - Um site de Contabilidade para o dia a dia da empresa.</li>
+        </ul>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault(); // Evita o comportamento padrão de navegação
+    
+                // Seleciona o alvo da âncora (link) e rola suavemente até ele
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
