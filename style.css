@@ -10,7 +10,7 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #f1f1f1;
-    background-color: #1d1d1d;
+    background-color: #000000;
 }
 
 /* Navegação fixa */
@@ -19,7 +19,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #030303;
     padding: 15px 0;
     text-align: center;
     z-index: 1000;
@@ -45,7 +45,7 @@ nav a::before {
     position: absolute;
     width: 0;
     height: 2px;
-    background: #3498db;
+    background: #34db35;
     left: 50%;
     bottom: 0;
     transition: all 0.3s;
@@ -53,7 +53,7 @@ nav a::before {
 }
 
 nav a:hover {
-    color: #3498db;
+    color: #34db35;
     transform: scale(1.1);
 }
 
@@ -64,22 +64,23 @@ nav a:hover::before {
 /* Efeito de brilho ao passar o mouse */
 nav a:hover {
     color: #fff;
-    text-shadow: 0 0 10px #3498db, 0 0 20px #3498db, 0 0 30px #3498db;
+    text-shadow: 0 0 10px #34db35, 0 0 20px #34db35, 0 0 30px #34db35;
 }
 
 /* Seções */
 section {
     padding: 80px 20px;
     margin-top: 70px;
-    border-bottom: 1px solid #444;
-    background-color: #282828;
+    border-bottom: 1px solid #000000;
+    background-color: #000000;
 }
 
 h2 {
-    color: #3498db;
+    color: #34db35;
     margin-bottom: 15px;
     font-size: 2em;
     letter-spacing: 1px;
+    text-align: center;
 }
 
 p {
@@ -112,13 +113,13 @@ p {
 
 .form-group input:focus,
 .form-group textarea:focus {
-    border-color: #3498db;
-    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+    border-color: #34db35;
+    box-shadow: 0 0 10px #34db35(52, 152, 219, 0.5);
 }
 
 /* Botões */
 button {
-    background-color: #005791;
+    background-color: #34db35;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -129,7 +130,7 @@ button {
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: #34db35;
     transform: scale(1.05);
 }
 
