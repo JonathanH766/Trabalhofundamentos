@@ -73,16 +73,28 @@
     </main>
 
     <script>
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            });
-        });
+     // Seleciona todos os links dentro da tag <nav>
+document.querySelectorAll('nav a').forEach(anchor => {
+    
+    // Adiciona um ouvinte de evento de clique para cada link
+    anchor.addEventListener('click', function (e) {
         
+        // Impede o comportamento padrão do link (navegação normal)
+        e.preventDefault();
+
+        // Seleciona o elemento correspondente ao valor do atributo href
+        // Esse valor é geralmente um ID de uma seção da página (ex: #sobre)
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            
+            // Configura a rolagem para ser suave (transição gradual)
+            behavior: 'smooth',
+
+            // Define a posição do elemento na tela, colocando-o no topo
+            block: 'start'
+        });
+    });
+});
+
     </script>
 </body>
 </html>
